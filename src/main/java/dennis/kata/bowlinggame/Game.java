@@ -10,8 +10,10 @@ public class Game {
 
     public int score() {
         int score = 0;
-        for (int i = 0; i < rolls.length; i++) {
-            score += rolls[i];
+        int index = 0;
+        for (int frame = 0; frame < 10; frame++) {
+            score += rolls[index] + rolls[index + 1];
+            index += 2;
         }
         return score;
     }

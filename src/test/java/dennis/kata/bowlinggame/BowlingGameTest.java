@@ -31,12 +31,12 @@ public class BowlingGameTest {
         assertEquals(20, game.score());
     }
 
-//    @Test
-//    public void testOneSpare() {
-//        game.roll(5);
-//        game.roll(5);  // spare
-//        game.roll(5);
-//        rollMany(17, 0);
-//        assertEquals(20, game.score());
-//    }
+    @Test
+    public void testOneSpare() {
+        game.roll(5);
+        game.roll(5);  // spare
+        game.roll(5);
+        rollMany(17, 0);
+        assertEquals(20, game.score());
+    }
 }

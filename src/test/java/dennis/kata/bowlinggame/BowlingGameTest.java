@@ -6,5 +6,6 @@ public class BowlingGameTest {
     @Test
     public void testGame() {
         Game game = new Game();
+        game.roll(0);
     }
 }
